@@ -1,0 +1,7 @@
+ ~/study_projects/Geek/git/ [master+] git restore --staged cherry
+ ~/study_projects/Geek/git/ [master+] git restore --staged .
+
+git log --oneline
+46dd7d1 (HEAD -> master) add cherry
+
+Git commit —amend

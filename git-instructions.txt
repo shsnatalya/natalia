@@ -1,0 +1,69 @@
+
+git add . - command to save
+git status - check status of our files if they are added or not
+
+git commit -m "wrote instructions about how to add files to
+ git"
+ git log - command to check history of our commits (saved files)
+ IN GIT WE HAVE 3 STAGES
+1. WORKING - files that are not added
+2. STAGING - after we run command "git add" - now files are staged
+3. COMMIT - commited (saved files)
+
+
+FILES ALSO CAN HAVE 3 STATES:
+1.UNMODIFIED - 
+2.MODIFIED
+3.STAGED
+
+in the file itself after you're done with changes run "command +S" to save files
+when we run command git log we see: commit ID (commit SHA)
+(HEAD -> master) - it means your branch that you work on and last commit
+commit message - what the commit is about
+
+ ~/study_projects/Geek/git/ [master+] git restore --staged cherry
+ ~/study_projects/Geek/git/ [master+] git restore --staged .
+
+git log --oneline
+46dd7d1 (HEAD -> master) add cherry
+
+Git commit —amend - command to chenage message of the commit
+
+git reset IDof the commit -  command to delete commit
+with git reset were changing the commits history
+git rebase -  rebase to reqrite history of commits
+ ~/study_projects/Geek/git/ [master] git rebase -i --root
+
+ ~/study_projects/Geek/git/ [master] git branch -a - TO SHOW EXISTING BRANCHES
+ ~/study_projects/Geek/git/ [master] git checkout -b secondbranch - CREATE A NEW BRANCHE
+ ~/study_projects/Geek/git/ [secondbranch] git checkout master
+Switched to branch 'master' - - - -SWITCH TO OTHER BRANCH
+
+To check what branch I am on right now
+ ~/study_projects/Geek/git/ [secondbranch] git status
+On branch secondbranch
+
+ ~/study_projects/Geek/git/ [master] git merge secondbranch - 
+CODE WHICH I HAD IN MY SECOND BRANCH I ADDED TO MASTER
+
+ ~/study_projects/Geek/git/ [master] git  branch -d secondbranch
+Deleted branch secondbranch (was fe54635).
+
+GIT FLOW - stategy how companies work.
+1. off of master we create a feature branch (it has a code from our main branch)
+2. we do our work in feature branch 
+3. when we're done we merge the feature branch to the master branch and delete feature branch
+
+ ~/study_projects/Geek/git/ [master] git clean -f -d -  to delete untracked file 
+ ~/study_projects/Geek/git/ [master] git clean -d -f -  to delete file forcefully
+
+
+ ~/study_projects/Geek/git/ [master+] git restore --staged cherry
+ ~/study_projects/Geek/git/ [master+] git restore --staged .
+
+git log --oneline
+46dd7d1 (HEAD -> master) add cherry
+
+Git commit —amend
+
+ ~/ git rebase -i --root - ccd ommand to rewrite history of commits
